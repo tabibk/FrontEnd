@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Add New Product</title>
+        <link rel="stylesheet" href="../assets/css/style.css">
+        <script src="https://kit.fontawesome.com/9549cfd088.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <!-- =================== Navbar =================== -->
+        <nav class="flex">
+            <a href="../index.html" class="tabibak">Tabibak</a>
+            <div class="flex">
+                <a href="Pharmacy_profile.html">
+                    <img src="../images/user.png">
+                </a>
+                <a href="login.html">
+                    <img src="../images/logout.png">
+                </a>
+            </div>
+        </nav>
+        <section class="addingMedicine_section">
+            <div class="add_product">
+                <form class="adding grid">
+                    <h2>
+                        Add new medicine or product
+                    </h2>
+                    <div class="medicine">
+                        <label for="medicine-name">Medicine's name <span>(Required)</span></label>
+                        <input type="text" id="medicine-name">
+                    </div>
+                    <div class="package">
+                        <label for="package-size">package size <span>(Required)</span></label>
+                        <input type="number" id="package-size">
+                    </div>
+                    <div class="reason">
+                        <label for="use-reasons">Reasons for use <span>(Required)</span></label>
+                        <textarea id="use-reasons" autocomplete="off" style="width: 478px; height: 150px;"></textarea>
+                    </div>
+                    <div class="file">
+                        <p>Excel file <span>(Optional)</span></p>
+                        <label for="file" class="myfile"> 
+                        <input type="file" id="file" style="display: none;">
+                        <span class="upload-button">
+                            <img src="../images/Vector3.png" alt="">
+                        </span>
+                        </label>
+                    </div>
+                    <a id="add_field" class="add_field">+Add a new field</a>
+                    <button class="cancel">Cancel</button>
+                    <button class="save">Save</button>
+                </form>
+            </div>
+            <div class="popup hidden">
+                <h2>
+                    Add new field
+                </h2>
+                <button class="close">&times;</button>
+                <form class="grid">
+                    <div>
+                        <label for="label">Label</label>
+                        <textarea id="label" placeholder="Details" autocomplete="off"></textarea>
+                    </div>
+                    <div class="req">
+                        <input type="checkbox" name="" id="required">
+                        <label for="required">Required?</label>
+                    </div>
+                    <div class="buttons "> 
+                        <button>Cancel</button>
+                        <button class="save">Save this field</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <div class="overlay hidden"></div>
+        <script src="../assets/scripts/popUp.js"></script>
+    </body>
+</html>

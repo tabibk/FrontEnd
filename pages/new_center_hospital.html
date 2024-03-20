@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Add New Hospital OR Clinic</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../assets/css/style.css">
+        <link href="../fontawesome-free-6.0.0-web/css/all.min.css" rel="stylesheet">
+        <link href="../fontawesome-free-6.0.0-web/css/fontawesome.min.css" rel="stylesheet">
+    </head>
+    <body>
+
+        <!-- =================== Navbar =================== -->
+        <nav class="flex">
+            <a href="../index.html" class="tabibak">Tabibak</a>
+            <div class="flex">
+                <a href="hoapital_clinic_profile.html">
+                    <img src="../images/user.png">
+                </a>
+                <a href="login.html">
+                    <img src="../images/logout.png">
+                </a>
+            </div>
+        </nav>
+        <!-- =================== Hospitals & Departments =================== -->
+        <section class="grid add_hospital">
+            <h2>
+                Add new hospital OR Clinic
+            </h2>
+            <form class="grid hospital_departments">
+                <div class="grid">
+                    <label>Hospital Name</label>
+                    <input type="text" name="Name_center">
+                </div>
+                <div class="depart_row grid">
+                    <div class="grid">
+                        <label>Address</label>
+                        <textarea rows="4" cols="50"></textarea>
+                    </div>
+                    <div class="grid">
+                        <div>
+                            <label>X :</label>
+                            <input type="number" name="Location">
+                        </div>
+                        <div>
+                            <label>Y :</label>
+                            <input type="text" name="Location">
+                        </div>
+                    </div>
+                </div>
+                <div class="depart_row grid">
+                    <div class="depart_name">
+                        <label>Department Name</label>
+                        <input type="text" name="depart_name">
+                    </div>
+                    <div class="doctor_name">
+                        <label>Doctor Name</label>
+                        <input type="text" name="doctor_name">
+                    </div>
+                </div>
+                
+                
+                <a id="add_department" class="add_department" onclick="addDepartment()">+Add another department</a>
+            </form>
+        </section>
+
+
+        <script src="../assets/scripts/popUp.js"></script>
+    </body>
+</html>

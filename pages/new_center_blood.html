@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Add New Center</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../assets/css/style.css">
+        <link href="../fontawesome-free-6.0.0-web/css/all.min.css" rel="stylesheet">
+        <link href="../fontawesome-free-6.0.0-web/css/fontawesome.min.css" rel="stylesheet">
+    </head>
+    <body>
+
+        <!-- =================== Navbar =================== -->
+        <nav class="flex">
+            <a href="../index.html" class="tabibak">Tabibak</a>
+            <div class="flex">
+                <a href="bloodBank_profile.html">
+                    <img src="../images/user.png">
+                </a>
+                <a href="login.html">
+                    <img src="../images/logout.png">
+                </a>
+            </div>
+        </nav>
+        <!-- =================== Blood Places body =================== -->
+        <section class="grid blood_places">
+            <div class="flex product_overview_title">
+                <h2>Add a New Center</h2>          
+            </div>
+
+            <form class="grid">
+                <div class="grid blood_type">
+                    <div class="grid">
+                        <label>Name's center</label>
+                        <input type="text" name="Name_center">
+                    </div>
+                    <div class="flex">
+                        <div class="grid">
+                            <label>X :</label>
+                            <input type="number" name="Location">
+                        </div>
+                        <div class="grid">
+                            <label>Y :</label>
+                            <input type="text" name="Location">
+                        </div>
+                    </div>
+                </div>
+                <div class="flex">
+                    <div class="grid">
+                        <label>Address</label>
+                        <textarea rows="4" cols="50"></textarea>
+                        
+                    </div>
+                </div>
+                <div class="grid">
+                    <label>Type of blood</label>
+                    <div class="grid blood_type">
+
+                        <div class="grid">
+                            
+                            <div class="flex">
+                                <input type="checkbox" class="check_box" name="bloodType" id="bloodType2">
+                                <label for="bloodType2"><h3>A+</h3></label>
+                                <h3>
+                                    ( 
+                                    <a id="reduceBag">-</a> 
+                                    <span id="bagNo" class="bagNo"></span>
+                                    <a id="addBag">+</a>
+                                    )
+                                </h3>
+                            </div>
+                            <div class="flex">
+                                <input type="checkbox" class="check_box" name="bloodType" id="bloodType2">
+                                <label for="bloodType2"><h3>B+</h3></label>
+                                <h3>
+                                    ( 
+                                    <a id="reduceBag">-</a> 
+                                    <span id="bagNo" class="bagNo"></span>
+                                    <a id="addBag">+</a>
+                                    )
+                                </h3>
+                            </div>
+                            <div class="flex">
+                                <input type="checkbox" class="check_box" name="bloodType" id="bloodType3">
+                                <label for="bloodType3"><h3>O+</h3></label>
+                                <h3>
+                                    ( 
+                                    <a id="reduceBag">-</a> 
+                                    <span id="bagNo" class="bagNo"></span>
+                                    <a id="addBag">+</a>
+                                    )
+                                </h3>
+                            </div>
+                            <div class="flex">
+                                <input type="checkbox" class="check_box" name="bloodType" id="bloodType4">
+                                <label for="bloodType4"><h3>AB+</h3></label>
+                                <h3>
+                                    ( 
+                                    <a id="reduceBag">-</a> 
+                                    <span id="bagNo" class="bagNo"></span>
+                                    <a id="addBag">+</a>
+                                    )
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="grid">
+                            
+                            <div class="flex">
+                                <input type="checkbox" class="check_box" name="bloodType" id="bloodType6">
+                                <label for="bloodType6"><h3>A-</h3></label>
+                                <h3>
+                                    ( 
+                                    <a id="reduceBag">-</a> 
+                                    <span id="bagNo" class="bagNo"></span>
+                                    <a id="addBag">+</a>
+                                    )
+                                </h3>
+                            </div>
+                            <div class="flex">
+                                <input type="checkbox" class="check_box" name="bloodType" id="bloodType6">
+                                <label for="bloodType6"><h3>B-</h3></label>
+                                <h3>
+                                    ( 
+                                    <a id="reduceBag">-</a> 
+                                    <span id="bagNo" class="bagNo"></span>
+                                    <a id="addBag">+</a>
+                                    )
+                                </h3>
+                            </div>
+                            <div class="flex">
+                                <input type="checkbox" class="check_box" name="bloodType" id="bloodType7">
+                                <label for="bloodType7"><h3>O-</h3></label>
+                                <h3>
+                                    ( 
+                                    <a id="reduceBag">-</a> 
+                                    <span id="bagNo" class="bagNo"></span>
+                                    <a id="addBag">+</a>
+                                    )
+                                </h3>
+                            </div>
+                            <div class="flex">
+                                <input type="checkbox" class="check_box" name="bloodType" id="bloodType8">
+                                <label for="bloodType8"><h3>AB-</h3></label>
+                                <h3>
+                                    ( 
+                                    <a id="reduceBag">-</a> 
+                                    <span id="bagNo" class="bagNo"></span>
+                                    <a id="addBag">+</a>
+                                    )
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </section>
+
+
+        <script src="../assets/scripts/script.js"></script>
+    </body>
+</html>

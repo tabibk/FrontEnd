@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Product Overview</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../assets/css/style.css">
+        <link href="../fontawesome-free-6.0.0-web/css/all.min.css" rel="stylesheet">
+        <link href="../fontawesome-free-6.0.0-web/css/fontawesome.min.css" rel="stylesheet">
+    </head>
+    <body>
+      
+
+        <!-- =================== Navbar =================== -->
+        <nav class="flex">
+          <a href="../index.html" class="tabibak">Tabibak</a> 
+          <div class="flex">
+              <a href="Pharmacy_profile.html">
+                  <img src="../images/user.png">
+              </a>
+              <a href="login.html">
+                  <img src="../images/logout.png">
+              </a>
+          </div>
+      </nav>
+        <!-- =================== Product_Overview body =================== -->
+      <section>
+        <div class="grid product_overview">
+          <div class="flex product_overview_title">
+            <h2>Product Overview</h2>
+            <a onclick="popUP2()" class="show-form"><i class="fa-solid fa-plus"></i> Add new medicine</a>      
+          </div>
+          <div class=" modal1 hidden">
+            <!-- <button class="close-modal">&times;</button> -->
+              <form class="grid">
+                <div class="new_med flex">
+                  <div class="grid">
+                    <label>Medicine Name</label>
+                    <input type="text" placeholder="Enter Name.." name="Medicine_name"/>
+                  </div>
+                  <div class="grid dep_Doctors">
+                    <div class="grid">
+                      <label>Medicine Quantity</label>
+                      <div class="doc_input">
+                        <input type="number" placeholder="Quantity.." name="quantity"/>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="submit">
+                  <input type="submit" value="Save">
+                </div>
+              </form>
+          </div>
+          <!-- ===== Products Table ===== -->
+          <div class="data_table">
+            <table>
+              <caption>
+                <div class="table_buttons">
+                  <a href="#" class="active" id="all_products">All Products</a>
+                </div>
+              </caption>
+              <tr>
+                <th><input type="checkbox" class="check_box" name="productName" id="select_allProducts"></th>
+                <th><h3>Number</h3></th>
+                <th><label for="select_allProducts"><h3>Product Name</h3></label></th>
+                <!-- Dropdown -->
+                <th class="dropdown_container">
+                  <div class="dropdown" id="dropdown_content">
+                    <button class="dropdown_button" id="dropdown_button">
+                      <i class="fa-solid fa-location-crosshairs dropdown_icon"></i>
+                      <span class="dropdown_name">Action</span>
+  
+                      <div class="dropdown__icons">
+                        <i class="fa-solid fa-chevron-down dropdown_arrow"></i>
+                        <i class="fa-solid fa-xmark dropdown_close"></i>
+                      </div>
+                    </button>
+  
+                    <ul class="dropdown_menu">
+                      <li class="dropdown_item">
+                        <i class="fa-regular fa-hand-point-up dropdown_icon"></i>
+                        <span class="dropdown_name">Update</span>
+                      </li>
+                      <li class="dropdown_item">
+                        <i class="fa-solid fa-eraser dropdown_icon"></i>
+                        <span class="dropdown_name">Delete</span>
+                      </li>
+                    </ul>
+                  </div>
+                </th>
+              </tr>
+              <tr>
+                <td><input type="checkbox" class="check_box" name="productName" id="checkBox1"></td>
+                <td><p>1</p></td>
+                <td class="flex">
+                  <label for="checkBox1"><p>Alphintern</p></label>
+                  <i class="fa-solid fa-circle-info show-modal"></i>
+                </td>
+                <td><i class="fa-regular fa-trash-can"></i></td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" class="check_box" name="productName" id="checkBox2"></td>
+                <td><p>2</p></td>
+                <td class="flex">
+                  <label for="checkBox2"><p>Alphintern</p></label>
+                  <i class="fa-solid fa-circle-info"></i>
+                </td>
+                <td><i class="fa-regular fa-trash-can"></i></td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" class="check_box" name="productName" id="checkBox3"></td>
+                <td><p>3</p></td>
+                <td class="flex">
+                  <label for="checkBox3"><p>Alphintern</p></label>
+                  <i class="fa-solid fa-circle-info"></i>
+                </td>
+                <td><i class="fa-regular fa-trash-can"></i></td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" class="check_box" name="productName" id="checkBox4"></td>
+                <td><p>4</p></td>
+                <td class="flex">
+                  <label for="checkBox4"><p>Alphintern</p></label>
+                  <i class="fa-solid fa-circle-info"></i>
+                </td>
+                <td><i class="fa-regular fa-trash-can"></i></td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" class="check_box" name="productName"  id="checkBox5"></td>
+                <td><p>5</p></td>
+                <td class="flex">
+                  <label for="checkBox5"><p>Alphintern</p></label>
+                  <i class="fa-solid fa-circle-info"></i>
+                </td>
+                <td><i class="fa-regular fa-trash-can"></i></td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" class="check_box" name="productName"  id="checkBox6"></td>
+                <td><p>6</p></td>
+                <td class="flex">
+                  <label for="checkBox6"><p>Alphintern</p></label>
+                  <i class="fa-solid fa-circle-info"></i>
+                </td>
+                <td><i class="fa-regular fa-trash-can"></i></td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" class="check_box" name="productName"  id="checkBox7"></td>
+                <td><p>7</p></td>
+                <td class="flex">
+                  <label for="checkBox7"><p>Alphintern</p></label>
+                  <i class="fa-solid fa-circle-info"></i>
+                </td>
+                <td><i class="fa-regular fa-trash-can"></i></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <!-- PopUp Model -->
+        <div class="modal hidden flex">
+          <!-- <button class="close-modal">&times;</button> -->
+          <div>
+            <h1>Reasons  for use:</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+            </p>
+          </div>
+          <div class="grid">
+            <a class="btn"><i class="fa-regular fa-pen-to-square" style="color: 407BFF;"></i> Edit</a>
+            <h3>Price: 54 EGP</h3>
+          </div>
+        </div>
+      </section>
+      <div class="overlay hidden"></div>
+      <script src="../assets/scripts/popUp.js"></script>
+    </body>
+</html>

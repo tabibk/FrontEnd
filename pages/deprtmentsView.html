@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Departments</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link href="../fontawesome-free-6.0.0-web/css/all.min.css" rel="stylesheet">
+    <link href="../fontawesome-free-6.0.0-web/css/fontawesome.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- =================== Navbar =================== -->
+    <nav class="flex">
+        <a href="../index.html" class="tabibak">Tabibak</a>
+        <div class="flex">
+            <a href="hoapital_clinic_profile.html">
+                <img src="../images/user.png">
+            </a>
+            <a href="login.html">
+                <img src="../images/logout.png">
+            </a>
+        </div>
+    </nav>
+    <section class="hospital_department_section">
+        <div class="slide-container">
+            <div class="flex product_overview_title">
+                <h2>Show Departments & Doctors</h2>
+                <a onclick="popUP2()" class="show-form"><i class="fa-solid fa-plus"></i> Add new department</a>
+            </div>
+            <div class=" modal1 hidden">
+                <form class="grid">
+                <div class="new_med flex">
+                    <div class="grid">
+                        <label>Departments Name</label>
+                        <input type="text" placeholder="Enter dep name.." name="dep_name"/>
+                    </div>
+                    <div class="grid dep_Doctors">
+                        <div class="grid">
+                            <label>Doctors Name</label>
+                            <div class="doc_input">
+                                <input type="text" placeholder="Enter doc name.." name="doc_name"/>
+                            </div>
+                        </div>
+                        <a id="addMedLink" onclick="addMed()"><i class="fa-solid fa-plus"></i> Add Doctor</a>
+                    </div>
+                </div>
+                <div class="submit">
+                    <input type="submit" value="Save">
+                </div>
+                </form>
+            </div>
+            <!-- ===== departments Cards ===== -->
+            <div class="slide-content">
+                <div class="card-wrapper departments">
+                    <div class="cardiology">
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="depart-overlay"></span>
+                                <div class="card-image"> 
+                                    <img src="../images/001-medical-check.png" alt="" class="card-img">
+                                </div>
+                            </div>
+                            <div class="card-content ">
+                                <h2 class="name">cardiology</h2>
+                                <button class="show_doctors" >Show Doctors</button>
+                            </div>
+                        </div>
+                    </div>
+                        
+                    <div class="dentistry">
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="depart-overlay"></span>
+                                <div class="card-image">
+                                    <img src="../images/002-tooth.png" alt="" class="card-img">
+                                </div>
+                            </div>
+                            <div class="card-content ">
+                                <h2 class="name">dentistry</h2>
+                                <button class="show_doctors" >Show Doctors</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="dermatology">
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="depart-overlay"></span>
+                
+                                <div class="card-image">
+                                    <img src="../images/003-spots.png" alt="" class="card-img">
+                                </div>
+                            </div>
+                            <div class="card-content ">
+                                <h2 class="name">dermatology</h2>
+                                <button class="show_doctors" >Show Doctors</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="ENT">
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="depart-overlay"></span>
+                                <div class="card-image">
+                                    <img src="../images/004-larynx.png" alt="" class="card-img">
+                                </div>
+                            </div>
+                            <div class="card-content ">
+                                <h2 class="name">ENT</h2>
+                                <button class="show_doctors" >Show Doctors</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gastroenterology">
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="depart-overlay"></span>
+                                <div class="card-image">
+                                    <img src="../images/005-gastroenterology.png" alt="" class="card-img">
+                                </div>
+                            </div>
+                            <div class="card-content ">
+                                <h2 class="name">gastroenterology</h2>
+                                <button class="show_doctors" >Show Doctors</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gynecology">
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="depart-overlay"></span>
+                                <div class="card-image">
+                                <img src="../images/006-obstetrics.png" alt="" class="card-img"> 
+                                </div>
+                            </div>
+                            <div class="card-content ">
+                                <h2 class="name">gynecology & obstetrics</h2>
+                                <button class="show_doctors" >Show Doctors</button>
+                            </div>
+                        </div>
+                    </div> 
+                        
+                    <div class="neurology">
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="depart-overlay"></span>
+                                <div class="card-image">
+                                    <img src="../images/007-brain.png" alt="" class="card-img">
+                                </div>
+                            </div>
+                            <div class="card-content ">
+                                <h2 class="name">neurology</h2>
+                                <button class="show_doctors" >Show Doctors</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="nutrition">
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="depart-overlay"></span>
+                                <div class="card-image">
+                                    <img src="../images/008-plan.png" alt="" class="card-img">
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <h2 class="name">nutrition</h2>
+                                <button class="show_doctors" >Show Doctors</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="oncology">
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="depart-overlay"></span>
+                                <div class="card-image"> 
+                                    <img src="../images/009-cancer-cell.png" alt="" class="card-img">
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <h2 class="name">oncology</h2>
+                                <button class="show_doctors" >Show Doctors</button>
+                            </div>
+                        </div>
+                    </div>  
+                    <div class="ophthalmology">
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="depart-overlay"></span>
+                
+                                <div class="card-image">
+                                    <img src="../images/010-optometrist.png" alt="" class="card-img">
+                                </div>
+                            </div>
+                            <div class="card-content ">
+                                <h2 class="name">ophthalmology</h2>
+                                <button class="show_doctors" >Show Doctors</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="orthopedics">
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                            <span class="depart-overlay"></span>
+                                <div class="card-image">
+                                <img src="../images/011-arthritis.png" alt="" class="card-img"> 
+                                </div>
+                            </div>
+                            <div class="card-content ">
+                                <h2 class="name">orthopedics</h2>
+                                <button class="show_doctors" >Show Doctors</button>
+                            </div>
+                        </div>
+                    </div> 
+                        
+                    <div class="urology">
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="depart-overlay"></span>
+                                <div class="card-image">
+                                    <img src="../images/012-kidney.png" alt="" class="card-img">
+                                </div>
+                            </div>
+                            <div class="card-content ">
+                                <h2 class="name">urology</h2>
+                                <button class="show_doctors" >Show Doctors</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="doctors_popup hidden">
+            <h2>
+                Departments'doctors
+            </h2>
+            <button class="close">&times;</button>
+            <div class="names flex">
+                <div class="doctor_name">
+                    DR/Mohamed
+                </div>
+                <div class="doctor_name">
+                    DR/Mohamed
+                </div>
+                <div class="doctor_name">
+                    DR/Mohamed
+                </div>
+                <div class="doctor_name">
+                    DR/Mohamed
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    <div class="overlay hidden"></div>
+    <script src="../assets/scripts/popUp.js"></script>
+</body>
+</html>

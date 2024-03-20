@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Hospital Profile</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../assets/css/style.css">
+        <link href="../fontawesome-free-6.0.0-web/css/all.min.css" rel="stylesheet">
+        <link href="../fontawesome-free-6.0.0-web/css/fontawesome.min.css" rel="stylesheet">
+    </head>
+    <body>
+        
+        <!-- =================== Navbar =================== -->
+        <nav class="flex">
+            <a href="../index.html" class="tabibak">Tabibak</a>
+            <div class="flex">
+                <a href="deprtmentsView.html">
+                    <img src="../images/back.png">
+                </a>
+                <a href="login.html">
+                    <img src="../images/logout.png">
+                </a>
+            </div>
+        </nav>
+        <!-- =================== Hospital Profile =================== -->
+        <section class="bloodBank_profile grid">
+            <div class="profile_img flex">
+                <div>
+                    <div class="section_icon"><img src="../images/health-care.png"></div>
+                    <img src="../images/Skiing-1.jpg">
+                </div>
+                <div class="grid">
+                    <h2>Esraa Mohamed Elhagen</h2>
+                    <h2>Middle East Hospital</h2>
+                    <p><i class="fa-solid fa-phone" style="color: #407BFF;"></i>  +1 (234) 567-8910</p>
+                </div>
+            </div> 
+            <form class="profile_info">
+                <div class="grid blood_type">
+                    <div class="grid">
+                        <label>Name</label>
+                        <input type="text" name="Name" value="Esraa" autocomplete="off">
+                    </div>
+                    <div class="grid">
+                        <label>Hospital Name</label>
+                        <input type="text" name="center" value="Blah Bla" autocomplete="off">
+                    </div>
+                </div>
+                <div class="grid blood_type">
+                    <div class="grid">
+                        <label>Email</label>
+                        <input type="email" name="Email" value="esraa@gmail.com" autocomplete="off">
+                    </div>
+                    <div class="grid">
+                        <label>Phone</label>
+                        <input type="number" name="phone" value="0123456789" autocomplete="off">
+                    </div>
+                </div>
+                <div class="grid blood_type">
+                    <div class="grid">
+                        <label>Address</label>
+                        <textarea rows="4" cols="50"  autocomplete="off"></textarea>
+                    </div>
+                    <div class="grid">
+                        <div class="grid">
+                        <label>X :</label>
+                        <input type="number" name="x" value="432785437" autocomplete="off">
+                        </div>
+                        <div class="grid">
+                        <label>Y :</label>
+                        <input type="number" name="y" value="896986383" autocomplete="off">
+                        </div>
+                    </div>
+                </div>
+                <div class="submit">
+                    <input type="submit"  value="Save">
+                </div>
+            </form>
+        </section>
+    </body>
+</html>
